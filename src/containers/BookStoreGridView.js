@@ -1,10 +1,18 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { deletebook } from "actions/actionCreators.js";
 
 class BookStoreGridView extends Component {
   constructor(props) {
     super(props);
   }
+
+  removeBook = id => {
+    const { deletebook } = this.props;
+    deletebook(id);
+  };
+
   render() {
     let count = 1;
     const elements = this.props.books.map(element => {
@@ -22,6 +30,17 @@ class BookStoreGridView extends Component {
                 <b>Category:</b>
                 {element.category}
               </p>
+              <div className="card-footer">
+                <button className="btn btn-success btn-sm">
+                  <i className="fa fa-edit" aria-hidden="true" />
+                </button>
+                <button
+                  onClick={() => this.removeBook(element.id)}
+                  className="btn btn-danger float-right btn-sm"
+                >
+                  <i className="fa fa-trash" aria-hidden="true" />
+                </button>{" "}
+              </div>
             </div>
           </div>{" "}
         </div>
@@ -50,7 +69,16 @@ const mapStateToProps = state => {
   };
 };
 
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(
+    {
+      deletebook
+    },
+    dispatch
+  );
+};
+
 export default connect(
   mapStateToProps,
-  null
+  mapDispatchToProps
 )(BookStoreGridView);
