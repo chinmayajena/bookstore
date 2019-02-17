@@ -9,6 +9,24 @@ const INITIAL_DATA = [
     category: "Philosophy",
     content: "Some book content",
     isBookmarked: false
+  },
+  {
+    id: 2,
+    name: "The Deep Horizon",
+    author: "Dawn Brown",
+    description: "A philosophical book regarding life journey",
+    category: "Philosophy",
+    content: "Some book content",
+    isBookmarked: false
+  },
+  {
+    id: 3,
+    name: "Ken n Abel",
+    author: "Jeffry Archer",
+    description: "A philosophical book regarding life journey",
+    category: "Philosophy",
+    content: "Some book content",
+    isBookmarked: false
   }
 ];
 
@@ -20,10 +38,11 @@ const BookReducer = (state = INITIAL_DATA, action) => {
         {
           id: action.id,
           name: action.name,
+          author: action.author,
           description: action.description,
           category: action.category,
           content: action.content,
-          isBookmarked: false
+          isBookmarked: action.isBookmarked || false
         }
       ];
     default:
