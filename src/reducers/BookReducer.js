@@ -1,4 +1,4 @@
-import { ADD_BOOK } from "actions/actionTypes";
+import { ADD_BOOK, REMOVE_BOOK } from "actions/actionTypes";
 
 const INITIAL_DATA = [
   {
@@ -27,6 +27,15 @@ const INITIAL_DATA = [
     category: "Philosophy",
     content: "Some book content",
     isBookmarked: false
+  },
+  {
+    id: 4,
+    name: "Ken n Abel",
+    author: "Jeffry Archer",
+    description: "A philosophical book regarding life journey",
+    category: "Philosophy",
+    content: "Some book content",
+    isBookmarked: false
   }
 ];
 
@@ -45,6 +54,9 @@ const BookReducer = (state = INITIAL_DATA, action) => {
           isBookmarked: action.isBookmarked || false
         }
       ];
+    case REMOVE_BOOK:
+      const numIndex = parseInt(action.id);
+      return state.filter(book => book.id !== numIndex);
     default:
       return state;
   }

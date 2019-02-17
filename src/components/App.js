@@ -1,13 +1,11 @@
 import React from "react";
 import BookStoreListView from "containers/BookStoreListView.js";
+import BookStoreGridView from "containers/BookStoreGridView.js";
 import AddBook from "containers/Addbook.js";
 import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Navbar, NavItem, Nav } from "react-bootstrap";
 
 const App = () => {
-  const Index = () => <h2>Home</h2>;
-  const About = () => <h2>About</h2>;
-  const Users = () => <h2>Users</h2>;
   return (
     <div className="App">
       <Router>
@@ -31,10 +29,10 @@ const App = () => {
             <div className="container shadow p-4 mb-4 bg-white">
               <Switch>
                 <Route exact path="/" component={BookStoreListView} />
-                <Route path="/gridview" component={About} />
+                <Route path="/gridview" component={BookStoreGridView} />
                 <Route path="/createbook" component={AddBook} />
                 {/* when none of the above match, <NoMatch> will be rendered */}
-                <Route component={Index} />
+                <Route component={BookStoreListView} />
               </Switch>
             </div>
           </main>

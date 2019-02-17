@@ -7,7 +7,6 @@ import { bindActionCreators } from "redux";
 class AddBook extends Component {
   handleFormSubmit = values => {
     const { addBook } = this.props;
-    console.log(values);
     addBook(values);
     this.props.history.push("/");
   };
