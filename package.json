@@ -1,0 +1,8 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "A sample app for book store",
+  "main": "index.js",
+  "author": "chinmaya",
+  "license": "MIT"
+}
