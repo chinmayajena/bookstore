@@ -6,7 +6,11 @@
   "author": "chinmaya",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^4.29.4"
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
   },
   "scripts": {
     "start": "webpack"
