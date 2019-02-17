@@ -4,5 +4,11 @@
   "description": "A sample app for book store",
   "main": "index.js",
   "author": "chinmaya",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.29.4"
+  },
+  "scripts": {
+    "start": "webpack"
+  }
 }
