@@ -1,0 +1,12 @@
+export const ADD_BOOK = "ADD_BOOK";
+export const BOOKMARK_BOOK = "BOOKMARK_BOOK";
+export const REMOVE_BOOK = "REMOVE_BOOK";
+export const SHOW_ALL_BOOK = "SHOW_ALL_BOOK";
+export const SET_FILTER = "SET_FILTER";
+export const SHOW_ALL = "SHOW_ALL";
+export const SHOW_COMPLETED = "SHOW_COMPLETED";
+export const SHOW_ACTIVE = "SHOW_ACTIVE";
+export const SET_VISIBILITY_FILTER = "SET_VISIBILITY_FILTER";
+export const DEFAULT_SORT = "default";
+export const SORT_BY_AUTHOR = "sortByAuthorName";
+export const SORT_BY_BOOK_NAME = "sortByBookName";

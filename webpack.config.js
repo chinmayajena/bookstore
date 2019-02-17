@@ -20,6 +20,13 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    modules: [path.resolve(__dirname, "./src"), "node_modules"],
+    extensions: ["*", ".js", ".jsx", "json"],
+    alias: {
+      reducers: path.resolve(__dirname, "./src/reducers")
+    }
+  },
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
     port: 3000
