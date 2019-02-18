@@ -1,3 +1,5 @@
+const { defaults } = require("jest-config");
+
 module.exports = {
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
@@ -9,7 +11,7 @@ module.exports = {
   coverageDirectory: "coverage",
 
   // An array of file extensions your modules use
-  moduleFileExtensions: ["js", "json", "jsx"],
+  moduleFileExtensions: [...defaults.moduleFileExtensions, "js", "json", "jsx"],
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
   setupFiles: ["<rootDir>/enzyme.config.js"],
@@ -30,5 +32,21 @@ module.exports = {
   transformIgnorePatterns: ["<rootDir>/node_modules/"],
 
   // Indicates whether each individual test should be reported during the run
-  verbose: false
+  verbose: false,
+
+  moduleNameMapper: {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+      "<rootDir>/__mocks__/fileMock.js",
+    "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+    "^@root(.*)$": "<rootDir>/src$1",
+    "^@components(.*)$": "<rootDir>/src/components$1",
+    "^@containers(.*)$": "<rootDir>/src/containers$1"
+  },
+  moduleDirectories: [
+    ".",
+    "src",
+    "src/components",
+    "src/containers",
+    "node_modules"
+  ]
 };
