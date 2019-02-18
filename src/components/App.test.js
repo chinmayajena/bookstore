@@ -5,7 +5,6 @@ import App from "./App";
 describe("<App />", () => {
   it("renders the component", () => {
     const component = shallow(<App />);
-    console.log(component.debug());
     const wrapper = component.find(".App");
     expect(wrapper.length).toBe(1);
   });

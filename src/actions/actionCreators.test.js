@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { addBook } from "./actionCreators.js";
+import { addBook, deletebook, bookmarkBook } from "./actionCreators.js";
 import {
   ADD_BOOK,
   REMOVE_BOOK,
@@ -23,6 +23,20 @@ describe("actionCreators", () => {
       ...newBookObj,
       id: 5,
       type: ADD_BOOK
+    });
+  });
+
+  it("deleteBook creates correct json for reducer", () => {
+    expect(deletebook(5)).toEqual({
+      type: REMOVE_BOOK,
+      id: 5
+    });
+  });
+
+  it("bookmarkBook creates correct json for reducer", () => {
+    expect(bookmarkBook(5)).toEqual({
+      type: BOOKMARK_BOOK,
+      id: 5
     });
   });
 });
