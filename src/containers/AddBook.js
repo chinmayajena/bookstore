@@ -26,10 +26,6 @@ const mapDispatchToProps = dispatch => {
   );
 };
 
-AddBook.propTypes = {
-  addBook: PropTypes.func
-};
-
 export default connect(
   null,
   mapDispatchToProps

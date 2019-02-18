@@ -1,10 +1,12 @@
 import React from "react";
-import { shallow } from 'enzyme';
- 
+import { shallow } from "enzyme";
 import App from "./App";
-describe('<App />', () => {  
-    test('renders the component', () => {
-      const wrapper = shallow(<App />);
-       expect(wrapper).toMatchSnapshot();
-    }); 
+
+describe("<App />", () => {
+  it("renders the component", () => {
+    const component = shallow(<App />);
+    console.log(component.debug());
+    const wrapper = component.find(".App");
+    expect(wrapper.length).toBe(1);
+  });
 });
