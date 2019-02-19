@@ -1,12 +1,6 @@
 import React from "react";
-import { shallow } from "enzyme";
 import { addBook, deletebook, bookmarkBook } from "./actionCreators.js";
-import {
-  ADD_BOOK,
-  REMOVE_BOOK,
-  BOOKMARK_BOOK,
-  SET_FILTER
-} from "actions/actionTypes.js";
+import { ADD_BOOK, REMOVE_BOOK, BOOKMARK_BOOK } from "actions/actionTypes.js";
 
 describe("actionCreators", () => {
   it("addBook creates correct json for reducer", () => {
