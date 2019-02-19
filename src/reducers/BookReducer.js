@@ -1,4 +1,4 @@
-import { ADD_BOOK, REMOVE_BOOK } from "actions/actionTypes";
+import { ADD_BOOK, REMOVE_BOOK, BOOKMARK_BOOK } from "actions/actionTypes";
 
 const INITIAL_DATA = [
   {
@@ -57,6 +57,14 @@ const BookReducer = (state = INITIAL_DATA, action) => {
     case REMOVE_BOOK:
       const numIndex = parseInt(action.id);
       return state.filter(book => book.id !== numIndex);
+    case BOOKMARK_BOOK:
+      const recordIndex = parseInt(action.id);
+      const foundRecord = state.filter(book => book.id === recordIndex);
+      let updatedRecord = {};
+      if (foundRecord.length > 0) {
+        updatedRecord = { ...foundRecord[0], isBookmarked: true };
+      }
+      return [...state.filter(book => book.id !== recordIndex), updatedRecord];
     default:
       return state;
   }

@@ -49,4 +49,36 @@ describe("BookReducer", () => {
       )
     ).toEqual([]);
   });
+
+  it("should handle BOOKMARK_BOOK", () => {
+    expect(
+      bookReducer(
+        [
+          {
+            id: 4,
+            name: "Ken n Abel",
+            author: "Jeffry Archer",
+            description: "A philosophical book regarding life journey",
+            category: "Philosophy",
+            content: "Some book content",
+            isBookmarked: false
+          }
+        ],
+        {
+          type: BOOKMARK_BOOK,
+          id: 4
+        }
+      )
+    ).toEqual([
+      {
+        id: 4,
+        name: "Ken n Abel",
+        author: "Jeffry Archer",
+        description: "A philosophical book regarding life journey",
+        category: "Philosophy",
+        content: "Some book content",
+        isBookmarked: true
+      }
+    ]);
+  });
 });
