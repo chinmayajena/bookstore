@@ -14,8 +14,10 @@ class BookStoreFilter extends Component {
           className="form-control"
           onChange={e => sortBy(e.target.value)}
         >
+          <option value="name">Select Sort By...</option>
           <option value="name">Book Name</option>
           <option value="author">Author</option>
+          <option value="isBookmarked">Star</option>
         </select>
 
         <input

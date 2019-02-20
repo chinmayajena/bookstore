@@ -5,7 +5,8 @@ import {
   SET_FILTER,
   UPDATE_BOOK,
   UPDATE_BOOK_PROGRESS,
-  SORT_BY
+  SORT_BY,
+  BOOKMARK_TOP
 } from "actions/actionTypes.js";
 
 let BookId = 5;
@@ -75,4 +76,8 @@ export const clear = () => ({
 export const search = filter => ({
   type: SET_FILTER,
   filter
+});
+
+export const bookmarkTop = () => ({
+  type: BOOKMARK_TOP
 });

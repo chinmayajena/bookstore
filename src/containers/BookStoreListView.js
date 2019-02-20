@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getVisibleBooks, compareValues } from "utils/ArraySearchUtil.js";
+import { getBookList } from "utils/ArraySearchUtil.js";
 class BookStoreListView extends Component {
   constructor(props) {
     super(props);
@@ -51,11 +51,6 @@ class BookStoreListView extends Component {
     );
   }
 }
-
-const getBookList = (books, filter, sortBy) => {
-  let filteredBooks = getVisibleBooks(books, filter);
-  return [...filteredBooks.sort(compareValues(sortBy))];
-};
 
 const mapStateToProps = state => {
   return {
