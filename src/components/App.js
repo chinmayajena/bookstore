@@ -4,7 +4,16 @@ import BookStoreGridView from "containers/BookStoreGridView.js";
 import AddBook from "containers/Addbook.js";
 import EditBook from "containers/Editbook.js";
 import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Navbar, NavItem, Nav } from "react-bootstrap";
+import {
+  Navbar,
+  NavItem,
+  Nav,
+  Form,
+  FormControl,
+  Button,
+  Container
+} from "react-bootstrap";
+import BookStoreFilter from "containers/BookStoreFilter.js";
 
 const App = () => {
   return (
@@ -24,9 +33,12 @@ const App = () => {
               <Link to="/createbook" className="nav-link">
                 Add Book
               </Link>
+              <Form className="navbar-right ml-auto">
+                <BookStoreFilter />
+              </Form>
             </Navbar.Collapse>
           </Navbar>
-          <main className="mt-3 pt-5">
+          <Container className="mt-3 pt-5">
             <div className="container shadow p-4 mb-4 bg-white">
               <Switch>
                 <Route exact path="/" component={BookStoreListView} />
@@ -37,7 +49,7 @@ const App = () => {
                 <Route component={BookStoreListView} />
               </Switch>
             </div>
-          </main>
+          </Container>
           /
         </div>
       </Router>

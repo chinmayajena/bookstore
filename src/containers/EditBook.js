@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import CreateBookForm from "./CreateBookForm.js";
+import CreateBookForm from "components/CreateBookForm.js";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { removeBook, updateBook } from "actions/actionCreators.js";
+import { updateBook } from "actions/actionCreators.js";
 import { bindActionCreators } from "redux";
 
 class EditBook extends Component {

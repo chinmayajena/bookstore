@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { SHOW_ALL } from "actions/actionTypes";
-
+import { getVisibleBooks } from "utils/ArraySearchUtil.js";
 class BookStoreListView extends Component {
   constructor(props) {
     super(props);
@@ -11,10 +10,9 @@ class BookStoreListView extends Component {
     return (
       <div>
         {this.props.books && this.props.books.length !== 0 ? (
-          <table className="table">
-            <thead class="thead-dark">
+          <table className="table" id="book-store-table">
+            <thead className="thead-dark">
               <tr>
-                <th>ID</th>
                 <th>Book Name</th>
                 <th>Author</th>
                 <th>Description</th>
@@ -26,13 +24,12 @@ class BookStoreListView extends Component {
             <tbody>
               {this.props.books.map(book => (
                 <tr key={book.id}>
-                  <td>{book.id}</td>
                   <td>{book.name}</td>
                   <td>{book.author}</td>
                   <td>{book.description}</td>
                   <td>{book.category}</td>
                   <td>{book.content}</td>
-                  <td>
+                  <td className="bookmark-column">
                     {book.isBookmarked ? (
                       <i className="fas fa-star" />
                     ) : (
@@ -55,20 +52,9 @@ class BookStoreListView extends Component {
   }
 }
 
-const getVisibleBooks = (books, filter) => {
-  return books;
-  /* switch (filter) {
-    case SHOW_ALL:
-      return books;
-    default:
-      throw new Error("Unknown filter: " + filter);
-  } */
-};
-
 const mapStateToProps = state => {
   return {
-    books: state.books,
-    recordFilter: state.recordFilter
+    books: getVisibleBooks(state.books, state.visibilityFilter.text)
   };
 };
 

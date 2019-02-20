@@ -1,8 +1,4 @@
-import {
-  SHOW_ALL,
-  SET_VISIBILITY_FILTER,
-  UPDATE_BOOK_PROGRESS
-} from "actions/actionTypes";
+import { SET_FILTER, UPDATE_BOOK_PROGRESS } from "actions/actionTypes";
 
 let filterDefaultState = {
   text: "",
@@ -12,8 +8,8 @@ let filterDefaultState = {
 
 const visibilityFilter = (state = filterDefaultState, action) => {
   switch (action.type) {
-    case SET_VISIBILITY_FILTER:
-      return action.filter;
+    case SET_FILTER:
+      return { ...state, text: action.filter };
     case UPDATE_BOOK_PROGRESS:
       return { ...state, updateRecordId: action.id };
     default:

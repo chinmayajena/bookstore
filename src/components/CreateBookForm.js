@@ -1,7 +1,7 @@
 import React from "react";
 import { reduxForm, Field } from "redux-form";
 
-let CreateBookForm = props => {
+export let CreateBookForm = props => {
   const { handleSubmit } = props;
   return (
     <form onSubmit={handleSubmit} className="form">

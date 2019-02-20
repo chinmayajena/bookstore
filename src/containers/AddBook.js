@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CreateBookForm from "./CreateBookForm.js";
+import CreateBookForm from "components/CreateBookForm.js";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { addBook } from "actions/actionCreators.js";

@@ -61,11 +61,6 @@ export const bookmarkBook = id => ({
   id: id
 });
 
-export const setVisibilityFilter = filter => ({
-  type: SET_FILTER,
-  filter
-});
-
 export const sortBy = sortType => ({
   type: "SORT_BY",
   sortType
@@ -74,4 +69,9 @@ export const sortBy = sortType => ({
 export const clear = () => ({
   type: "CLEAR",
   defaultFilter: "defaultState"
+});
+
+export const search = filter => ({
+  type: SET_FILTER,
+  filter
 });
