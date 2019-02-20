@@ -33,7 +33,7 @@ const App = () => {
               <Link to="/createbook" className="nav-link">
                 Add Book
               </Link>
-              <Form className="navbar-right ml-auto">
+              <Form inline className="navbar-right ml-auto">
                 <BookStoreFilter />
               </Form>
             </Navbar.Collapse>

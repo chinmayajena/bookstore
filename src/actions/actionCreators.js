@@ -4,7 +4,8 @@ import {
   BOOKMARK_BOOK,
   SET_FILTER,
   UPDATE_BOOK,
-  UPDATE_BOOK_PROGRESS
+  UPDATE_BOOK_PROGRESS,
+  SORT_BY
 } from "actions/actionTypes.js";
 
 let BookId = 5;
@@ -62,7 +63,7 @@ export const bookmarkBook = id => ({
 });
 
 export const sortBy = sortType => ({
-  type: "SORT_BY",
+  type: SORT_BY,
   sortType
 });
 

@@ -19,9 +19,12 @@ exports[`<App /> renders the component 1`] = `
           <Link to=\\"/createbook\\" className=\\"nav-link\\" replace={false}>
             Add Book
           </Link>
+          <ForwardRef(Bootstrap(Form)) inline={true} className=\\"navbar-right ml-auto\\">
+            <Connect(BookStoreFilter) />
+          </ForwardRef(Bootstrap(Form))>
         </ForwardRef(Bootstrap(NavbarCollapse))>
       </ForwardRef(Bootstrap(undefined))>
-      <main className=\\"mt-3 pt-5\\">
+      <ForwardRef(Bootstrap(Container)) className=\\"mt-3 pt-5\\">
         <div className=\\"container shadow p-4 mb-4 bg-white\\">
           <Switch>
             <Route exact={true} path=\\"/\\" component={[Function: Connect]} />
@@ -31,7 +34,7 @@ exports[`<App /> renders the component 1`] = `
             <Route component={[Function: Connect]} />
           </Switch>
         </div>
-      </main>
+      </ForwardRef(Bootstrap(Container))>
       /
     </div>
   </BrowserRouter>

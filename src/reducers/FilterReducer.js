@@ -1,8 +1,8 @@
-import { SET_FILTER, UPDATE_BOOK_PROGRESS } from "actions/actionTypes";
+import { SET_FILTER, UPDATE_BOOK_PROGRESS, SORT_BY } from "actions/actionTypes";
 
 let filterDefaultState = {
   text: "",
-  sortBy: "",
+  sortBy: "name",
   updateRecordId: undefined
 };
 
@@ -12,6 +12,8 @@ const visibilityFilter = (state = filterDefaultState, action) => {
       return { ...state, text: action.filter };
     case UPDATE_BOOK_PROGRESS:
       return { ...state, updateRecordId: action.id };
+    case SORT_BY:
+      return { ...state, sortBy: action.sortType };
     default:
       return state;
   }

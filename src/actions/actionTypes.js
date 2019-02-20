@@ -10,5 +10,4 @@ export const SHOW_COMPLETED = "SHOW_COMPLETED";
 export const SHOW_ACTIVE = "SHOW_ACTIVE";
 export const SET_VISIBILITY_FILTER = "SET_VISIBILITY_FILTER";
 export const DEFAULT_SORT = "default";
-export const SORT_BY_AUTHOR = "sortByAuthorName";
-export const SORT_BY_BOOK_NAME = "sortByBookName";
+export const SORT_BY = "SORT_BY";

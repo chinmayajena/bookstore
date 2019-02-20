@@ -1,32 +1,43 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { search } from "actions/actionCreators.js";
+import { search, sortBy } from "actions/actionCreators.js";
 
 class BookStoreFilter extends Component {
   render() {
-    const { search, value } = this.props;
+    const { search, value, sortBy } = this.props;
 
     return (
-      <input
-        className="form-control"
-        placeholder="Search ..."
-        onChange={e => search(e.target.value)}
-        value={value}
-      />
+      <div>
+        <select
+          id="sort-select"
+          className="form-control"
+          onChange={e => sortBy(e.target.value)}
+        >
+          <option value="name">Book Name</option>
+          <option value="author">Author</option>
+        </select>
+
+        <input
+          id="search-input"
+          className="form-control"
+          placeholder="Search ..."
+          onChange={e => search(e.target.value)}
+          value={value}
+        />
+      </div>
     );
   }
 }
 
 const mapStateToProps = state => {
   return {
-    books: state.books,
-    recordFilter: state.visibilityFilter.filter
+    bookStoreSettings: state.visibilityFilter
   };
 };
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ search }, dispatch);
+  return bindActionCreators({ search, sortBy }, dispatch);
 }
 
 export default connect(

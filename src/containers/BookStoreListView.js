@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getVisibleBooks } from "utils/ArraySearchUtil.js";
+import { getVisibleBooks, compareValues } from "utils/ArraySearchUtil.js";
 class BookStoreListView extends Component {
   constructor(props) {
     super(props);
@@ -54,7 +54,9 @@ class BookStoreListView extends Component {
 
 const mapStateToProps = state => {
   return {
-    books: getVisibleBooks(state.books, state.visibilityFilter.text)
+    books: getVisibleBooks(state.books, state.visibilityFilter.text).sort(
+      compareValues(state.visibilityFilter.sortBy)
+    )
   };
 };
 
