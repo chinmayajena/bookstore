@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { deleteBook, updateBookProgress } from "actions/actionCreators.js";
+import {
+  deleteBook,
+  updateBookProgress,
+  bookmarkBook
+} from "actions/actionCreators.js";
 
 class BookStoreGridView extends Component {
   constructor(props) {
@@ -17,6 +21,11 @@ class BookStoreGridView extends Component {
     const { updateBookProgress } = this.props;
     updateBookProgress(id);
     this.props.history.push("/editbook");
+  };
+
+  starBook = id => {
+    const { bookmarkBook } = this.props;
+    bookmarkBook(id);
   };
 
   render() {
@@ -36,12 +45,23 @@ class BookStoreGridView extends Component {
                 <b>Category:</b>
                 {element.category}
               </p>
+              <p className="card-text">
+                <b>Description:</b>
+                {element.description}
+              </p>
               <div className="card-footer">
                 <button
                   onClick={() => this.editBook(element.id)}
                   className="btn btn-success btn-sm"
                 >
                   <i className="fa fa-edit" aria-hidden="true" />
+                </button>
+                <button
+                  onClick={() => this.starBook(element.id)}
+                  className="btn btn-warning btn-sm"
+                >
+                  {element.isBookmarked && <i className="fas fa-star" />}
+                  {!element.isBookmarked && <i className="far fa-star" />}
                 </button>
                 <button
                   onClick={() => this.removeBook(element.id)}
@@ -82,6 +102,7 @@ const mapDispatchToProps = dispatch => {
   return bindActionCreators(
     {
       deleteBook,
+      bookmarkBook,
       updateBookProgress
     },
     dispatch

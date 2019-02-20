@@ -11,8 +11,8 @@ class BookStoreListView extends Component {
     return (
       <div>
         {this.props.books && this.props.books.length !== 0 ? (
-          <table className="table table-dark">
-            <thead>
+          <table className="table">
+            <thead class="thead-dark">
               <tr>
                 <th>ID</th>
                 <th>Book Name</th>
@@ -32,7 +32,13 @@ class BookStoreListView extends Component {
                   <td>{book.description}</td>
                   <td>{book.category}</td>
                   <td>{book.content}</td>
-                  <td>{book.isBookmarked.toString()}</td>
+                  <td>
+                    {book.isBookmarked ? (
+                      <i className="fas fa-star" />
+                    ) : (
+                      <i className="far fa-star" />
+                    )}
+                  </td>
                 </tr>
               ))}
             </tbody>
