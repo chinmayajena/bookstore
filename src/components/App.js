@@ -2,6 +2,7 @@ import React from "react";
 import BookStoreListView from "containers/BookStoreListView.js";
 import BookStoreGridView from "containers/BookStoreGridView.js";
 import AddBook from "containers/Addbook.js";
+import EditBook from "containers/Editbook.js";
 import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Navbar, NavItem, Nav } from "react-bootstrap";
 
@@ -31,6 +32,7 @@ const App = () => {
                 <Route exact path="/" component={BookStoreListView} />
                 <Route path="/gridview" component={BookStoreGridView} />
                 <Route path="/createbook" component={AddBook} />
+                <Route path="/editbook" component={EditBook} />
                 {/* when none of the above match, <NoMatch> will be rendered */}
                 <Route component={BookStoreListView} />
               </Switch>

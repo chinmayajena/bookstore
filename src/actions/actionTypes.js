@@ -1,4 +1,6 @@
 export const ADD_BOOK = "ADD_BOOK";
+export const UPDATE_BOOK = "UPDATE_BOOK";
+export const UPDATE_BOOK_PROGRESS = "UPDATE_BOOK_PROGRESS";
 export const BOOKMARK_BOOK = "BOOKMARK_BOOK";
 export const REMOVE_BOOK = "REMOVE_BOOK";
 export const SHOW_ALL_BOOK = "SHOW_ALL_BOOK";

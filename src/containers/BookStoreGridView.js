@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { deletebook } from "actions/actionCreators.js";
+import { deleteBook, updateBookProgress } from "actions/actionCreators.js";
 
 class BookStoreGridView extends Component {
   constructor(props) {
@@ -9,8 +9,14 @@ class BookStoreGridView extends Component {
   }
 
   removeBook = id => {
-    const { deletebook } = this.props;
-    deletebook(id);
+    const { deleteBook } = this.props;
+    deleteBook(id);
+  };
+
+  editBook = id => {
+    const { updateBookProgress } = this.props;
+    updateBookProgress(id);
+    this.props.history.push("/editbook");
   };
 
   render() {
@@ -31,7 +37,10 @@ class BookStoreGridView extends Component {
                 {element.category}
               </p>
               <div className="card-footer">
-                <button className="btn btn-success btn-sm">
+                <button
+                  onClick={() => this.editBook(element.id)}
+                  className="btn btn-success btn-sm"
+                >
                   <i className="fa fa-edit" aria-hidden="true" />
                 </button>
                 <button
@@ -72,7 +81,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return bindActionCreators(
     {
-      deletebook
+      deleteBook,
+      updateBookProgress
     },
     dispatch
   );

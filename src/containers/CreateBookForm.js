@@ -44,7 +44,7 @@ let CreateBookForm = props => {
           <label className="label">Category</label>
           <div className="select">
             <Field className="form-control" name="category" component="select">
-              <option />
+              <option value="">Select a category...</option>
               <option value="fiction">fiction</option>
               <option value="non-fiction">non-fiction</option>
               <option value="Drama">Drama</option>
@@ -122,7 +122,11 @@ const renderField = ({
   </div>
 );
 
-export default (CreateBookForm = reduxForm({
+CreateBookForm = reduxForm({
   form: "createBook",
-  validate
-})(CreateBookForm));
+  enableReinitialize: true,
+  keepDirtyOnReinitialize: true,
+  updateUnregisteredFields: true
+})(CreateBookForm);
+
+export default CreateBookForm;
