@@ -52,10 +52,17 @@ class BookStoreListView extends Component {
   }
 }
 
+const getBookList = (books, filter, sortBy) => {
+  let filteredBooks = getVisibleBooks(books, filter);
+  return [...filteredBooks.sort(compareValues(sortBy))];
+};
+
 const mapStateToProps = state => {
   return {
-    books: getVisibleBooks(state.books, state.visibilityFilter.text).sort(
-      compareValues(state.visibilityFilter.sortBy)
+    books: getBookList(
+      state.books,
+      state.visibilityFilter.text,
+      state.visibilityFilter.sortBy
     )
   };
 };
