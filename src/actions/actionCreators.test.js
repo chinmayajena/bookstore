@@ -1,5 +1,5 @@
 import React from "react";
-import { addBook, deletebook, bookmarkBook } from "./actionCreators.js";
+import { addBook, deleteBook, bookmarkBook } from "./actionCreators.js";
 import { ADD_BOOK, REMOVE_BOOK, BOOKMARK_BOOK } from "actions/actionTypes.js";
 
 describe("actionCreators", () => {
@@ -21,7 +21,7 @@ describe("actionCreators", () => {
   });
 
   it("deleteBook creates correct json for reducer", () => {
-    expect(deletebook(5)).toEqual({
+    expect(deleteBook(5)).toEqual({
       type: REMOVE_BOOK,
       id: 5
     });

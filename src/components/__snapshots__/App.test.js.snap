@@ -1,3 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> renders the component 1`] = `ShallowWrapper {}`;
+exports[`<App /> renders the component 1`] = `
+"<div className=\\"App\\">
+  <BrowserRouter>
+    <div>
+      <ForwardRef(Bootstrap(undefined)) bg=\\"light\\" expand=\\"lg\\">
+        <ForwardRef(Bootstrap(NavbarBrand)) href=\\"#home\\">
+          bookstore!
+        </ForwardRef(Bootstrap(NavbarBrand))>
+        <ForwardRef(Bootstrap(NavbarToggle)) aria-controls=\\"basic-navbar-nav\\" />
+        <ForwardRef(Bootstrap(NavbarCollapse)) id=\\"basic-navbar-nav\\">
+          <Link to=\\"/\\" className=\\"nav-link\\" replace={false}>
+            List View
+          </Link>
+          <Link to=\\"/gridview\\" className=\\"nav-link\\" replace={false}>
+            Grid View
+          </Link>
+          <Link to=\\"/createbook\\" className=\\"nav-link\\" replace={false}>
+            Add Book
+          </Link>
+        </ForwardRef(Bootstrap(NavbarCollapse))>
+      </ForwardRef(Bootstrap(undefined))>
+      <main className=\\"mt-3 pt-5\\">
+        <div className=\\"container shadow p-4 mb-4 bg-white\\">
+          <Switch>
+            <Route exact={true} path=\\"/\\" component={[Function: Connect]} />
+            <Route path=\\"/gridview\\" component={[Function: Connect]} />
+            <Route path=\\"/createbook\\" component={[Function: Connect]} />
+            <Route path=\\"/editbook\\" component={[Function: Connect]} />
+            <Route component={[Function: Connect]} />
+          </Switch>
+        </div>
+      </main>
+      /
+    </div>
+  </BrowserRouter>
+</div>"
+`;
