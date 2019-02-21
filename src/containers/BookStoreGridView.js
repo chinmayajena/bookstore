@@ -6,7 +6,6 @@ import {
   updateBookProgress,
   bookmarkBook
 } from "actions/actionCreators.js";
-import { getVisibleBooks } from "utils/ArraySearchUtil.js";
 
 class BookStoreGridView extends Component {
   constructor(props) {
@@ -94,7 +93,12 @@ class BookStoreGridView extends Component {
 
 const mapStateToProps = state => {
   return {
-    books: getVisibleBooks(state.books, state.visibilityFilter.text)
+    books: getBookList(
+      state.books,
+      state.visibilityFilter.text,
+      state.visibilityFilter.sortBy,
+      state.visibilityFilter.sortOrder
+    )
   };
 };
 
