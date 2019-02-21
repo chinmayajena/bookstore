@@ -38,7 +38,7 @@ class BookStoreGridView extends Component {
       return (
         <div className="col-md-3" key={element.id}>
           {" "}
-          <div className="mt-3 pt-5 card">
+          <div className="mt-3 pt-5 card shadow">
             <div className="card-body">
               <h4 className="card-title">{element.name}</h4>
               <p className="card-text">
@@ -83,7 +83,7 @@ class BookStoreGridView extends Component {
       <ErrorBoundary>
         <div>
           {this.props.books && this.props.books.length !== 0 ? (
-            <div className="row p4">{elements}</div>
+            <div className="row p6 mt4">{elements}</div>
           ) : (
             <div
               style={{ marginTop: "50px" }}

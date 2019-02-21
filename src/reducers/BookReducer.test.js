@@ -1,4 +1,3 @@
-import React from "react";
 import bookReducer from "./BookReducer.js";
 import { ADD_BOOK, REMOVE_BOOK, BOOKMARK_BOOK } from "actions/actionTypes.js";
 
