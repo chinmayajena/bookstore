@@ -41,6 +41,16 @@ const INITIAL_DATA = [
     category: "fiction",
     content: "Some book content",
     isBookmarked: false
+  },
+
+  {
+    id: 5,
+    name: "Start With Why",
+    author: "Simon Sinek",
+    description: "A philosophical book regarding life journey",
+    category: "non-fiction",
+    content: "Some book content",
+    isBookmarked: false
   }
 ];
 

@@ -38,8 +38,8 @@ const App = () => {
               </Form>
             </Navbar.Collapse>
           </Navbar>
-          <Container className="mt-3 pt-5">
-            <div className="container shadow p-4 mb-4 bg-white">
+          <main className="mt-3 pt-5">
+            <div className="container-fluids p-2 mb-1 bg-white">
               <Switch>
                 <Route exact path="/" component={BookStoreListView} />
                 <Route path="/gridview" component={BookStoreGridView} />
@@ -49,7 +49,7 @@ const App = () => {
                 <Route component={BookStoreListView} />
               </Switch>
             </div>
-          </Container>
+          </main>
           /
         </div>
       </Router>

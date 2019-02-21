@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import { getBookList } from "utils/ArraySearchUtil.js";
+
 import {
   deleteBook,
   updateBookProgress,
@@ -30,9 +32,10 @@ class BookStoreGridView extends Component {
 
   render() {
     let count = 1;
+
     const elements = this.props.books.map(element => {
       return (
-        <div className="col-md-4" key={element.id}>
+        <div className="col-md-3" key={element.id}>
           {" "}
           <div className="mt-3 pt-5 card">
             <div className="card-body">
@@ -78,7 +81,7 @@ class BookStoreGridView extends Component {
     return (
       <div>
         {this.props.books && this.props.books.length !== 0 ? (
-          <div className="row">{elements}</div>
+          <div className="row p4">{elements}</div>
         ) : (
           <div style={{ marginTop: "50px" }} className="col-xs-12 offset-lg-1">
             <div className="alert alert-danger" role="alert">
