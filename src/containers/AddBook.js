@@ -6,7 +6,7 @@ import { addBook } from "actions/actionCreators.js";
 import { bindActionCreators } from "redux";
 import ErrorBoundary from "components/ErrorBoundary.js";
 
-class AddBook extends Component {
+export class AddBook extends Component {
   handleFormSubmit = values => {
     const { addBook } = this.props;
     addBook(values);
