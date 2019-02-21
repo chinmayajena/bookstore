@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { updateBook } from "actions/actionCreators.js";
 import { bindActionCreators } from "redux";
+import ErrorBoundary from "components/ErrorBoundary.js";
 
 class EditBook extends Component {
   handleFormSubmit = values => {
@@ -14,10 +15,12 @@ class EditBook extends Component {
 
   render() {
     return (
-      <CreateBookForm
-        initialValues={this.props.initialValues}
-        onSubmit={this.handleFormSubmit}
-      />
+      <ErrorBoundary>
+        <CreateBookForm
+          initialValues={this.props.initialValues}
+          onSubmit={this.handleFormSubmit}
+        />
+      </ErrorBoundary>
     );
   }
 }

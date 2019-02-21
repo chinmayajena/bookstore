@@ -106,7 +106,6 @@ const validate = val => {
     console.log("Author Name is required");
     errors.authorName = "Required";
   }
-
   return errors;
 };
 

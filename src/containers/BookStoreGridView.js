@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { getBookList } from "utils/ArraySearchUtil.js";
+import ErrorBoundary from "components/ErrorBoundary.js";
 
 import {
   deleteBook,
@@ -79,17 +80,22 @@ class BookStoreGridView extends Component {
       );
     });
     return (
-      <div>
-        {this.props.books && this.props.books.length !== 0 ? (
-          <div className="row p4">{elements}</div>
-        ) : (
-          <div style={{ marginTop: "50px" }} className="col-xs-12 offset-lg-1">
-            <div className="alert alert-danger" role="alert">
-              Book List is empty or Filter results show no results
+      <ErrorBoundary>
+        <div>
+          {this.props.books && this.props.books.length !== 0 ? (
+            <div className="row p4">{elements}</div>
+          ) : (
+            <div
+              style={{ marginTop: "50px" }}
+              className="col-xs-12 offset-lg-1"
+            >
+              <div className="alert alert-danger" role="alert">
+                Book List is empty or Filter results show no results
+              </div>
             </div>
-          </div>
-        )}{" "}
-      </div>
+          )}{" "}
+        </div>
+      </ErrorBoundary>
     );
   }
 }

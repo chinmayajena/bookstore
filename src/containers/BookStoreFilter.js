@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { search, sortBy, sortOrder } from "actions/actionCreators.js";
+import ErrorBoundary from "components/ErrorBoundary.js";
 
 class BookStoreFilter extends Component {
   render() {
     const { bookStoreSettings, search, value, sortBy, sortOrder } = this.props;
 
     return (
-      <div>
+      <ErrorBoundary>
         <select
           id="sort-select"
           className="form-control"
@@ -34,7 +35,7 @@ class BookStoreFilter extends Component {
           onChange={e => search(e.target.value)}
           value={value}
         />
-      </div>
+      </ErrorBoundary>
     );
   }
 }

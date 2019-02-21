@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { addBook } from "actions/actionCreators.js";
 import { bindActionCreators } from "redux";
+import ErrorBoundary from "components/ErrorBoundary.js";
 
 class AddBook extends Component {
   handleFormSubmit = values => {
@@ -13,7 +14,11 @@ class AddBook extends Component {
   };
 
   render() {
-    return <CreateBookForm onSubmit={this.handleFormSubmit} />;
+    return (
+      <ErrorBoundary>
+        <CreateBookForm onSubmit={this.handleFormSubmit} />
+      </ErrorBoundary>
+    );
   }
 }
 

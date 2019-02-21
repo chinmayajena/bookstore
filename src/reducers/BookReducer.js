@@ -17,9 +17,9 @@ const INITIAL_DATA = [
   },
   {
     id: 2,
-    name: "The Deep Horizon",
+    name: "The Digital Fortress",
     author: "Dawn Brown",
-    description: "A philosophical book regarding life journey",
+    description: "A techno-thriller novel ",
     category: "fiction",
     content: "Some book content",
     isBookmarked: false
