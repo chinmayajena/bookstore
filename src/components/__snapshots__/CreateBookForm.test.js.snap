@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<CreateBookForm /> renderField returns the correct field 1`] = `
+<div>
+  <div
+    className="control"
+  >
+    <label
+      className="field"
+    >
+      Test Label
+    </label>
+    <input
+      0="T"
+      1="e"
+      2="s"
+      3="t"
+      4="D"
+      5="a"
+      6="t"
+      7="a"
+      className="form-control"
+      placeholder="Test Label"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
 exports[`<CreateBookForm /> renders the component 1`] = `
 "<div className=\\"row\\">
   <form onSubmit={[undefined]} className=\\"form col-md-6 offset-md-3\\">

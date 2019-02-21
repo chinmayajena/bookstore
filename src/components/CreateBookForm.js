@@ -96,7 +96,7 @@ export let CreateBook = props => {
   );
 };
 
-const validate = val => {
+export const validate = val => {
   const errors = {};
   if (!val.bookName) {
     console.log("Book Name is required");
@@ -109,7 +109,7 @@ const validate = val => {
   return errors;
 };
 
-const renderField = ({
+export const renderField = ({
   input,
   label,
   type,
