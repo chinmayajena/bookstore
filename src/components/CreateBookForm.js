@@ -1,7 +1,7 @@
 import React from "react";
 import { reduxForm, Field } from "redux-form";
 
-export let CreateBookForm = props => {
+export let CreateBook = props => {
   const { handleSubmit } = props;
   return (
     <div className="row">
@@ -131,11 +131,11 @@ const renderField = ({
   </div>
 );
 
-CreateBookForm = reduxForm({
+let CreateBookForm = reduxForm({
   form: "createBook",
   enableReinitialize: true,
   keepDirtyOnReinitialize: true,
   updateUnregisteredFields: true
-})(CreateBookForm);
+})(CreateBook);
 
 export default CreateBookForm;

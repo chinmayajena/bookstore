@@ -1,12 +1,21 @@
 import React from "react";
 import { shallow } from "enzyme";
-import CreateBookForm from "./CreateBookForm";
+import { CreateBook } from "./CreateBookForm";
+import configureStore from "redux-mock-store";
 
 describe("<CreateBookForm />", () => {
+  const initialState = {};
+  const mockStore = configureStore();
+  let store, component;
+
+  beforeEach(() => {
+    store = mockStore(initialState);
+    component = shallow(<CreateBook store={store} />);
+  });
+
   it("renders the component", () => {
-    const component = shallow(<CreateBookForm />);
     expect(component.debug()).toMatchSnapshot();
-    /* const wrapper = component.find(".App");
-    expect(wrapper.length).toBe(1); */
+    const wrapper = component.find(".form");
+    expect(wrapper.length).toBe(1);
   });
 });

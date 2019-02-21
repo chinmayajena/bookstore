@@ -20,6 +20,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^24.1.0",
     "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.3",
     "regenerator-runtime": "^0.13.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.4",

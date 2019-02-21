@@ -1,3 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CreateBookForm /> renders the component 1`] = `"<Hoc touchOnBlur={true} touchOnChange={false} persistentSubmitErrors={false} destroyOnUnmount={true} shouldAsyncValidate={[Function: defaultShouldAsyncValidate]} shouldValidate={[Function: defaultShouldValidate]} shouldError={[Function: defaultShouldError]} shouldWarn={[Function: defaultShouldWarn]} enableReinitialize={true} keepDirtyOnReinitialize={true} updateUnregisteredFields={true} getFormState={[Function: getFormState]} pure={true} forceUnregisterOnUnmount={false} form=\\"createBook\\" forwardedRef={{...}} />"`;
+exports[`<CreateBookForm /> renders the component 1`] = `
+"<div className=\\"row\\">
+  <form onSubmit={[undefined]} className=\\"form col-md-6 offset-md-3\\">
+    <div className=\\"form-group\\">
+      <div className=\\"control\\">
+        <Field name=\\"name\\" component={[Function: renderField]} type=\\"text\\" label=\\"Book Name\\" className=\\"form-control\\" />
+      </div>
+    </div>
+    <div className=\\"form-group\\">
+      <div className=\\"control\\">
+        <Field name=\\"author\\" component={[Function: renderField]} type=\\"text\\" label=\\"Author Name\\" />
+      </div>
+    </div>
+    <div className=\\"form-group\\">
+      <div className=\\"control\\">
+        <Field name=\\"description\\" component={[Function: renderField]} type=\\"text\\" label=\\"Description\\" />
+      </div>
+    </div>
+    <div className=\\"form-group\\">
+      <div className=\\"control\\">
+        <label className=\\"label\\">
+          Category
+        </label>
+        <div className=\\"select\\">
+          <Field className=\\"form-control\\" name=\\"category\\" component=\\"select\\">
+            <option value=\\"\\">
+              Select a category...
+            </option>
+            <option value=\\"fiction\\">
+              fiction
+            </option>
+            <option value=\\"non-fiction\\">
+              non-fiction
+            </option>
+            <option value=\\"Drama\\">
+              Drama
+            </option>
+          </Field>
+        </div>
+      </div>
+    </div>
+    <div className=\\"form-check\\">
+      <div className=\\"control\\">
+        <label className=\\"form-check-label\\">
+          <Field name=\\"isBookmarked\\" id=\\"bookmarkbook\\" component=\\"input\\" type=\\"checkbox\\" className=\\"form-check-input\\" />
+          Bookmark ?
+        </label>
+      </div>
+    </div>
+    <div className=\\"form-group\\">
+      <div className=\\"control\\">
+        <label className=\\"label\\">
+          Content
+        </label>
+        <Field className=\\"form-control\\" name=\\"content\\" component=\\"textarea\\" />
+      </div>
+    </div>
+    <div className=\\"form-group\\">
+      <div className=\\"control\\">
+        <button type=\\"submit\\" className=\\"btn btn-primary\\">
+          Submit
+        </button>
+      </div>
+    </div>
+  </form>
+</div>"
+`;
