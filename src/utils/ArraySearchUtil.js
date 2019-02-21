@@ -3,7 +3,6 @@ export const getVisibleBooks = (books, filter) => {
   return books.filter(
     book =>
       Object.values(book).filter(eachString => {
-        console.log(eachString.toString());
         return (
           eachString
             .toString()

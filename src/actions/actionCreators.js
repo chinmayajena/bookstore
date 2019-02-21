@@ -73,16 +73,7 @@ export const sortOrder = sortOrder => ({
   sortOrder
 });
 
-export const clear = () => ({
-  type: "CLEAR",
-  defaultFilter: "defaultState"
-});
-
 export const search = filter => ({
   type: SET_FILTER,
   filter
-});
-
-export const bookmarkTop = () => ({
-  type: BOOKMARK_TOP
 });

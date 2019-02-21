@@ -24,8 +24,8 @@ exports[`<App /> renders the component 1`] = `
           </ForwardRef(Bootstrap(Form))>
         </ForwardRef(Bootstrap(NavbarCollapse))>
       </ForwardRef(Bootstrap(undefined))>
-      <ForwardRef(Bootstrap(Container)) className=\\"mt-3 pt-5\\">
-        <div className=\\"container shadow p-4 mb-4 bg-white\\">
+      <main className=\\"mt-3 pt-5\\">
+        <div className=\\"container-fluids p-2 mb-1 bg-white\\">
           <Switch>
             <Route exact={true} path=\\"/\\" component={[Function: Connect]} />
             <Route path=\\"/gridview\\" component={[Function: Connect]} />
@@ -34,7 +34,7 @@ exports[`<App /> renders the component 1`] = `
             <Route component={[Function: Connect]} />
           </Switch>
         </div>
-      </ForwardRef(Bootstrap(Container))>
+      </main>
       /
     </div>
   </BrowserRouter>
