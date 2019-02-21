@@ -1,5 +1,10 @@
 import bookReducer from "./BookReducer.js";
-import { ADD_BOOK, REMOVE_BOOK, BOOKMARK_BOOK } from "actions/actionTypes.js";
+import {
+  ADD_BOOK,
+  REMOVE_BOOK,
+  BOOKMARK_BOOK,
+  UPDATE_BOOK
+} from "actions/actionTypes.js";
 
 describe("BookReducer", () => {
   it("should handle ADD_BOOK", () => {
@@ -77,6 +82,44 @@ describe("BookReducer", () => {
         category: "Philosophy",
         content: "Some book content",
         isBookmarked: true
+      }
+    ]);
+  });
+
+  it("should handle UPDATE_BOOK", () => {
+    expect(
+      bookReducer(
+        [
+          {
+            id: 4,
+            name: "Ken n Abel",
+            author: "Jeffry Archer",
+            description: "A philosophical book regarding life journey",
+            category: "Philosophy",
+            content: "Some book content",
+            isBookmarked: false
+          }
+        ],
+        {
+          type: UPDATE_BOOK,
+          id: 4,
+          name: "Ken n Abel",
+          author: "Jeffry Archer",
+          description: "A philosophical book regarding life journey",
+          category: "fiction",
+          content: "Some book content",
+          isBookmarked: false
+        }
+      )
+    ).toEqual([
+      {
+        id: 4,
+        name: "Ken n Abel",
+        author: "Jeffry Archer",
+        description: "A philosophical book regarding life journey",
+        category: "fiction",
+        content: "Some book content",
+        isBookmarked: false
       }
     ]);
   });
