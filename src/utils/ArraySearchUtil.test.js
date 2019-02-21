@@ -1,4 +1,8 @@
-import { getVisibleBooks, compareValues } from "./ArraySearchUtil.js";
+import {
+  getVisibleBooks,
+  compareValues,
+  getBookList
+} from "./ArraySearchUtil.js";
 
 describe("ArraySearchUtil", () => {
   const INITIAL_DATA = [
@@ -61,6 +65,47 @@ describe("ArraySearchUtil", () => {
         category: "fiction",
         content: "Some book content",
         isBookmarked: true
+      }
+    ]);
+  });
+
+  it("should return searched rows correctly", () => {
+    expect(getBookList(INITIAL_DATA, "", "author")).toEqual([
+      {
+        id: 2,
+        name: "The Deep Horizon",
+        author: "Dawn Brown",
+        description: "A philosophical book regarding life journey",
+        category: "fiction",
+        content: "Some book content",
+        isBookmarked: false
+      },
+      {
+        id: 3,
+        name: "Harry Potter",
+        author: "J K Rowling",
+        description: "A philosophical book regarding life journey",
+        category: "fiction",
+        content: "Some book content",
+        isBookmarked: true
+      },
+      {
+        id: 4,
+        name: "Kane n Abel",
+        author: "Jeffry Archer",
+        description: "A philosophical book regarding life journey",
+        category: "fiction",
+        content: "Some book content",
+        isBookmarked: false
+      },
+      {
+        id: 1,
+        name: "The Alchemist",
+        author: "Paulo Cohelo",
+        description: "A philosophical book regarding life journey",
+        category: "fiction",
+        content: "Some book content",
+        isBookmarked: false
       }
     ]);
   });

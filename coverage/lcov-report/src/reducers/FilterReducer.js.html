@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">87.5% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>7/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">62.5% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>5/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/1</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">87.5% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>7/8</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -86,23 +86,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -119,27 +119,27 @@
   SORT_ORDER
 } from "actions/actionTypes";
 &nbsp;
-let filterDefaultState = <span class="cstat-no" title="statement not covered" >{</span>
+let filterDefaultState = {
   text: "",
   sortBy: "name",
   sortOrder: "asc",
   updateRecordId: undefined
 };
 &nbsp;
-const visibilityFilter = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span>tate = <span class="branch-0 cbranch-no" title="branch not covered" >filterDefaultState,</span> action) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  switch (action.type) {</span>
+const visibilityFilter = (state = <span class="branch-0 cbranch-no" title="branch not covered" >filterDefaultState,</span> action) =&gt; {
+  switch (action.type) {
     case SET_FILTER:
-<span class="cstat-no" title="statement not covered" >      return { ...state, text: action.filter };</span>
+      return { ...state, text: action.filter };
     case UPDATE_BOOK_PROGRESS:
-<span class="cstat-no" title="statement not covered" >      return { ...state, updateRecordId: action.id };</span>
+      return { ...state, updateRecordId: action.id };
     case SORT_BY:
-<span class="cstat-no" title="statement not covered" >      return { ...state, sortBy: action.sortType };</span>
+      return { ...state, sortBy: action.sortType };
     case SORT_ORDER:
-<span class="cstat-no" title="statement not covered" >      return {</span>
+      return {
         ...state,
-        sortOrder: state.sortOrder === "asc" ? "desc" : "asc"
+        sortOrder: state.sortOrder === "asc" ? "desc" : <span class="branch-1 cbranch-no" title="branch not covered" >"asc"</span>
       };
-    default:
+<span class="branch-4 cbranch-no" title="branch not covered" >    default:</span>
 <span class="cstat-no" title="statement not covered" >      return state;</span>
   }
 };
@@ -151,7 +151,7 @@ export default visibilityFilter;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Feb 21 2019 11:12:06 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Feb 21 2019 22:26:44 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../prettify.js"></script>
