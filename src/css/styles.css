@@ -2,3 +2,6 @@
     text-align: center;
 }
  
+#sort-select,#sort-order-btn{
+    margin-right: 7px;
+}

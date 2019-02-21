@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { search, sortBy } from "actions/actionCreators.js";
+import { search, sortBy, sortOrder } from "actions/actionCreators.js";
 
 class BookStoreFilter extends Component {
   render() {
-    const { search, value, sortBy } = this.props;
+    const { bookStoreSettings, search, value, sortBy, sortOrder } = this.props;
 
     return (
       <div>
@@ -19,7 +19,14 @@ class BookStoreFilter extends Component {
           <option value="author">Author</option>
           <option value="isBookmarked">Star</option>
         </select>
-
+        <button
+          id="sort-order-btn"
+          type="button"
+          className="btn btn-sm btn-info"
+          onClick={e => sortOrder("change")}
+        >
+          {bookStoreSettings.sortOrder}
+        </button>
         <input
           id="search-input"
           className="form-control"
@@ -39,7 +46,7 @@ const mapStateToProps = state => {
 };
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ search, sortBy }, dispatch);
+  return bindActionCreators({ search, sortBy, sortOrder }, dispatch);
 }
 
 export default connect(

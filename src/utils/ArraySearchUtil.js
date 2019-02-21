@@ -32,7 +32,7 @@ export const compareValues = (key, order = "asc") => {
   };
 };
 
-export const getBookList = (books, filter, sortBy) => {
+export const getBookList = (books, filter, sortBy, sortOrder = "asc") => {
   let filteredBooks = getVisibleBooks(books, filter);
-  return [...filteredBooks.sort(compareValues(sortBy))];
+  return [...filteredBooks.sort(compareValues(sortBy, sortOrder))];
 };

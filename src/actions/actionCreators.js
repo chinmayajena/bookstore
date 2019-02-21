@@ -6,7 +6,7 @@ import {
   UPDATE_BOOK,
   UPDATE_BOOK_PROGRESS,
   SORT_BY,
-  BOOKMARK_TOP
+  SORT_ORDER
 } from "actions/actionTypes.js";
 
 let BookId = 5;
@@ -66,6 +66,11 @@ export const bookmarkBook = id => ({
 export const sortBy = sortType => ({
   type: SORT_BY,
   sortType
+});
+
+export const sortOrder = sortOrder => ({
+  type: SORT_ORDER,
+  sortOrder
 });
 
 export const clear = () => ({

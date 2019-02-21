@@ -57,7 +57,8 @@ const mapStateToProps = state => {
     books: getBookList(
       state.books,
       state.visibilityFilter.text,
-      state.visibilityFilter.sortBy
+      state.visibilityFilter.sortBy,
+      state.visibilityFilter.sortOrder
     )
   };
 };

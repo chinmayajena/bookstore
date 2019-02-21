@@ -6,3 +6,4 @@ export const REMOVE_BOOK = "REMOVE_BOOK";
 export const SET_FILTER = "SET_FILTER";
 export const SORT_BY = "SORT_BY";
 export const BOOKMARK_TOP = "BOOKMARK_TOP";
+export const SORT_ORDER = "SORT_ORDER";
