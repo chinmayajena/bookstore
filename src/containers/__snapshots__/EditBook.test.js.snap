@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EditBook /> renders the component 1`] = `
+"<ErrorBoundary>
+  <ReduxForm initialValues={[undefined]} onSubmit={[Function]} touchOnBlur={true} touchOnChange={false} persistentSubmitErrors={false} destroyOnUnmount={true} shouldAsyncValidate={[Function: defaultShouldAsyncValidate]} shouldValidate={[Function: defaultShouldValidate]} shouldError={[Function: defaultShouldError]} shouldWarn={[Function: defaultShouldWarn]} enableReinitialize={true} keepDirtyOnReinitialize={true} updateUnregisteredFields={true} getFormState={[Function: getFormState]} pure={true} forceUnregisterOnUnmount={false} form=\\"createBook\\" />
+</ErrorBoundary>"
+`;
