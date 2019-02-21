@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1550771512360" clover="3.2.0">
-  <project timestamp="1550771512360" name="All files">
-    <metrics statements="149" coveredstatements="76" conditionals="72" coveredconditionals="27" methods="64" coveredmethods="22" elements="285" coveredelements="125" complexity="0" loc="149" ncloc="149" packages="6" files="16" classes="16"/>
+<coverage generated="1550773134739" clover="3.2.0">
+  <project timestamp="1550773134739" name="All files">
+    <metrics statements="149" coveredstatements="77" conditionals="72" coveredconditionals="28" methods="64" coveredmethods="23" elements="285" coveredelements="128" complexity="0" loc="149" ncloc="149" packages="6" files="16" classes="16"/>
     <package name="src">
       <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="/Users/chinmayajena/work/react/bookstore/src/index.js">
@@ -44,17 +44,17 @@
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="23" coveredstatements="8" conditionals="13" coveredconditionals="0" methods="7" coveredmethods="2"/>
+      <metrics statements="23" coveredstatements="9" conditionals="13" coveredconditionals="1" methods="7" coveredmethods="3"/>
       <file name="App.js" path="/Users/chinmayajena/work/react/bookstore/src/components/App.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
       </file>
       <file name="CreateBookForm.js" path="/Users/chinmayajena/work/react/bookstore/src/components/CreateBookForm.js">
-        <metrics statements="15" coveredstatements="6" conditionals="9" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <metrics statements="15" coveredstatements="7" conditionals="9" coveredconditionals="1" methods="3" coveredmethods="2"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
         <line num="99" count="2" type="stmt"/>
         <line num="100" count="0" type="stmt"/>
         <line num="101" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -65,7 +65,7 @@
         <line num="107" count="0" type="stmt"/>
         <line num="109" count="0" type="stmt"/>
         <line num="112" count="2" type="stmt"/>
-        <line num="118" count="0" type="stmt"/>
+        <line num="118" count="1" type="stmt"/>
         <line num="134" count="2" type="stmt"/>
       </file>
       <file name="ErrorBoundary.js" path="/Users/chinmayajena/work/react/bookstore/src/components/ErrorBoundary.js">

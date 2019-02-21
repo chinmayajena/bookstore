@@ -29,7 +29,7 @@ exports[`<CreateBookForm /> renderField returns the correct field 1`] = `
 
 exports[`<CreateBookForm /> renders the component 1`] = `
 "<div className=\\"row\\">
-  <form onSubmit={[undefined]} className=\\"form col-md-6 offset-md-3\\">
+  <form onSubmit={[Function: mockConstructor]} className=\\"form col-md-6 offset-md-3\\">
     <div className=\\"form-group\\">
       <div className=\\"control\\">
         <Field name=\\"name\\" component={[Function: renderField]} type=\\"text\\" label=\\"Book Name\\" className=\\"form-control\\" />

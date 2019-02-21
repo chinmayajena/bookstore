@@ -6,12 +6,15 @@ import configureStore from "redux-mock-store";
 describe("<CreateBookForm />", () => {
   const initialState = {};
   const mockStore = configureStore();
+  const mockSubmitfn = jest.fn();
   let store, component;
   let submitting, touched, error, reset, onSave, handleSubmit, warning;
 
   beforeEach(() => {
     store = mockStore(initialState);
-    component = shallow(<CreateBook store={store} />);
+    component = shallow(
+      <CreateBook handleSubmit={mockSubmitfn} store={store} />
+    );
     submitting = false;
     touched = false;
     error = null;
@@ -34,5 +37,17 @@ describe("<CreateBookForm />", () => {
         meta: { touched, error, warning }
       })
     ).toMatchSnapshot();
+  });
+
+  it("should call the mock submit function", () => {
+    component.find(".form").simulate("submit", { preventDefault() {} });
+    expect(mockSubmitfn.mock.calls.length).toBe(1);
+  });
+
+  it("should validate the form values", () => {
+    expect(validate({})).toEqual({
+      authorName: "Required",
+      bookName: "Required"
+    });
   });
 });
