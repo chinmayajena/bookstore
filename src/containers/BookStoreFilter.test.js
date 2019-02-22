@@ -32,7 +32,6 @@ describe("<BookStoreFilter />", () => {
   });
 
   it("renders the component", () => {
-    console.log(component.props());
     expect(component.debug()).toMatchSnapshot();
     const wrapper = component.find("ErrorBoundary");
     expect(wrapper.length).toBe(1);

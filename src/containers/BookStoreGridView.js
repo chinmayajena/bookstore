@@ -10,7 +10,7 @@ import {
   bookmarkBook
 } from "actions/actionCreators.js";
 
-class BookStoreGridView extends Component {
+export class BookStoreGridView extends Component {
   constructor(props) {
     super(props);
   }
@@ -55,12 +55,14 @@ class BookStoreGridView extends Component {
               </p>
               <div className="card-footer">
                 <button
+                  id={`edit-btn-gridview-${element.id}`}
                   onClick={() => this.editBook(element.id)}
                   className="btn btn-success btn-sm"
                 >
                   <i className="fa fa-edit" aria-hidden="true" />
                 </button>
                 <button
+                  id={`bookmark-btn-gridview-${element.id}`}
                   onClick={() => this.starBook(element.id)}
                   className="btn btn-warning btn-sm"
                 >
@@ -68,6 +70,7 @@ class BookStoreGridView extends Component {
                   {!element.isBookmarked && <i className="far fa-star" />}
                 </button>
                 <button
+                  id={`delete-btn-gridview-${element.id}`}
                   onClick={() => this.removeBook(element.id)}
                   className="btn btn-danger float-right btn-sm"
                 >
