@@ -1,0 +1,437 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookStoreGridView /> renders the component 1`] = `
+"<ErrorBoundary>
+  <div>
+    <div className=\\"row p6 mt4\\">
+      <div className=\\"col-md-3\\">
+         
+        <div className=\\"mt-3 pt-5 card shadow\\">
+          <div className=\\"card-body\\">
+            <h4 className=\\"card-title\\">
+              The Alchemist
+            </h4>
+            <p className=\\"card-text\\">
+              <b>
+                Author:
+              </b>
+              Paulo Cohelo
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Category:
+              </b>
+              fiction
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Description:
+              </b>
+              A philosophical book regarding life journey
+            </p>
+            <div className=\\"card-footer\\">
+              <button id=\\"edit-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"far fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </div>
+          </div>
+        </div>
+         
+      </div>
+      <div className=\\"col-md-3\\">
+         
+        <div className=\\"mt-3 pt-5 card shadow\\">
+          <div className=\\"card-body\\">
+            <h4 className=\\"card-title\\">
+              The Digital Fortress
+            </h4>
+            <p className=\\"card-text\\">
+              <b>
+                Author:
+              </b>
+              Dawn Brown
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Category:
+              </b>
+              fiction
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Description:
+              </b>
+              A techno-thriller novel 
+            </p>
+            <div className=\\"card-footer\\">
+              <button id=\\"edit-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"far fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </div>
+          </div>
+        </div>
+         
+      </div>
+      <div className=\\"col-md-3\\">
+         
+        <div className=\\"mt-3 pt-5 card shadow\\">
+          <div className=\\"card-body\\">
+            <h4 className=\\"card-title\\">
+              Harry Potter
+            </h4>
+            <p className=\\"card-text\\">
+              <b>
+                Author:
+              </b>
+              J K Rowling
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Category:
+              </b>
+              fiction
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Description:
+              </b>
+              A philosophical book regarding life journey
+            </p>
+            <div className=\\"card-footer\\">
+              <button id=\\"edit-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"fas fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </div>
+          </div>
+        </div>
+         
+      </div>
+      <div className=\\"col-md-3\\">
+         
+        <div className=\\"mt-3 pt-5 card shadow\\">
+          <div className=\\"card-body\\">
+            <h4 className=\\"card-title\\">
+              Kane n Abel
+            </h4>
+            <p className=\\"card-text\\">
+              <b>
+                Author:
+              </b>
+              Jeffry Archer
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Category:
+              </b>
+              fiction
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Description:
+              </b>
+              A philosophical book regarding life journey
+            </p>
+            <div className=\\"card-footer\\">
+              <button id=\\"edit-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"far fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </div>
+          </div>
+        </div>
+         
+      </div>
+      <div className=\\"col-md-3\\">
+         
+        <div className=\\"mt-3 pt-5 card shadow\\">
+          <div className=\\"card-body\\">
+            <h4 className=\\"card-title\\">
+              Start With Why
+            </h4>
+            <p className=\\"card-text\\">
+              <b>
+                Author:
+              </b>
+              Simon Sinek
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Category:
+              </b>
+              non-fiction
+            </p>
+            <p className=\\"card-text\\">
+              <b>
+                Description:
+              </b>
+              A philosophical book regarding life journey
+            </p>
+            <div className=\\"card-footer\\">
+              <button id=\\"edit-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"far fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </div>
+          </div>
+        </div>
+         
+      </div>
+    </div>
+     
+  </div>
+</ErrorBoundary>"
+`;
+
+exports[`<ConnectedBookStoreGridView /> +++ render the connected component 1`] = `
+"<Provider store={{...}}>
+  <Connect(BookStoreGridView) books={{...}} deleteBook={[Function: mockConstructor]} bookmarkBook={[Function: mockConstructor]} updateBookProgress={[Function: mockConstructor]}>
+    <BookStoreGridView books={{...}} deleteBook={[Function]} bookmarkBook={[Function]} updateBookProgress={[Function]}>
+      <ErrorBoundary>
+        <div>
+          <div className=\\"row p6 mt4\\">
+            <div className=\\"col-md-3\\">
+               
+              <div className=\\"mt-3 pt-5 card shadow\\">
+                <div className=\\"card-body\\">
+                  <h4 className=\\"card-title\\">
+                    Harry Potter
+                  </h4>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Author:
+                    </b>
+                    J K Rowling
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Category:
+                    </b>
+                    fiction
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Description:
+                    </b>
+                    A philosophical book regarding life journey
+                  </p>
+                  <div className=\\"card-footer\\">
+                    <button id=\\"edit-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"fas fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </div>
+                </div>
+              </div>
+               
+            </div>
+            <div className=\\"col-md-3\\">
+               
+              <div className=\\"mt-3 pt-5 card shadow\\">
+                <div className=\\"card-body\\">
+                  <h4 className=\\"card-title\\">
+                    Kane n Abel
+                  </h4>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Author:
+                    </b>
+                    Jeffry Archer
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Category:
+                    </b>
+                    fiction
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Description:
+                    </b>
+                    A philosophical book regarding life journey
+                  </p>
+                  <div className=\\"card-footer\\">
+                    <button id=\\"edit-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"far fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </div>
+                </div>
+              </div>
+               
+            </div>
+            <div className=\\"col-md-3\\">
+               
+              <div className=\\"mt-3 pt-5 card shadow\\">
+                <div className=\\"card-body\\">
+                  <h4 className=\\"card-title\\">
+                    Start With Why
+                  </h4>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Author:
+                    </b>
+                    Simon Sinek
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Category:
+                    </b>
+                    non-fiction
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Description:
+                    </b>
+                    A philosophical book regarding life journey
+                  </p>
+                  <div className=\\"card-footer\\">
+                    <button id=\\"edit-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"far fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </div>
+                </div>
+              </div>
+               
+            </div>
+            <div className=\\"col-md-3\\">
+               
+              <div className=\\"mt-3 pt-5 card shadow\\">
+                <div className=\\"card-body\\">
+                  <h4 className=\\"card-title\\">
+                    The Alchemist
+                  </h4>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Author:
+                    </b>
+                    Paulo Cohelo
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Category:
+                    </b>
+                    fiction
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Description:
+                    </b>
+                    A philosophical book regarding life journey
+                  </p>
+                  <div className=\\"card-footer\\">
+                    <button id=\\"edit-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"far fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </div>
+                </div>
+              </div>
+               
+            </div>
+            <div className=\\"col-md-3\\">
+               
+              <div className=\\"mt-3 pt-5 card shadow\\">
+                <div className=\\"card-body\\">
+                  <h4 className=\\"card-title\\">
+                    The Digital Fortress
+                  </h4>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Author:
+                    </b>
+                    Dawn Brown
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Category:
+                    </b>
+                    fiction
+                  </p>
+                  <p className=\\"card-text\\">
+                    <b>
+                      Description:
+                    </b>
+                    A techno-thriller novel 
+                  </p>
+                  <div className=\\"card-footer\\">
+                    <button id=\\"edit-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"far fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-danger float-right btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </div>
+                </div>
+              </div>
+               
+            </div>
+          </div>
+           
+        </div>
+      </ErrorBoundary>
+    </BookStoreGridView>
+  </Connect(BookStoreGridView)>
+</Provider>"
+`;

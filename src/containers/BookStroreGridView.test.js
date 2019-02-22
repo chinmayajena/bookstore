@@ -6,7 +6,7 @@ import ConnectedBookStoreGridView, {
 import configureStore from "redux-mock-store";
 import { Provider } from "react-redux";
 
-let initialState = [
+let initialStateBooks = [
   {
     id: 1,
     name: "The Alchemist",
@@ -59,13 +59,13 @@ const mockBookmarkfn = jest.fn();
 const mockUpdateProgressfn = jest.fn();
 let appHistory = [];
 
-describe("<BookStoreFilter />", () => {
+describe("<BookStoreGridView />", () => {
   let component;
 
   beforeEach(() => {
     component = shallow(
       <BookStoreGridView
-        books={initialState}
+        books={initialStateBooks}
         deleteBook={mockDeletefn}
         bookmarkBook={mockBookmarkfn}
         updateBookProgress={mockUpdateProgressfn}
@@ -96,18 +96,26 @@ describe("<BookStoreFilter />", () => {
   });
 });
 
-describe("<ConnectedBookStoreFilter />", () => {
+describe("<ConnectedBookStoreGridView />", () => {
   const mockStore = configureStore();
   let store, container;
 
   beforeEach(() => {
-    store = mockStore(initialState);
+    store = mockStore({
+      books: initialStateBooks,
+      visibilityFilter: {
+        text: "",
+        sortBy: "name",
+        sortOrder: "asc",
+        updateRecordId: undefined
+      }
+    });
     store.clearActions();
 
     container = mount(
       <Provider store={store}>
-        <BookStoreGridView
-          books={initialState}
+        <ConnectedBookStoreGridView
+          books={initialStateBooks}
           deleteBook={mockDeletefn}
           bookmarkBook={mockBookmarkfn}
           updateBookProgress={mockUpdateProgressfn}

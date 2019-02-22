@@ -1,0 +1,405 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookStoreListView /> renders the component 1`] = `
+"<ErrorBoundary>
+  <div className=\\"row\\">
+    <div className=\\"col-md-10 offset-md-1\\">
+      <table className=\\"table\\" id=\\"book-store-table\\">
+        <thead className=\\"thead-dark\\">
+          <tr>
+            <th>
+              Book Name
+            </th>
+            <th>
+              Author
+            </th>
+            <th>
+              Description
+            </th>
+            <th>
+              Category
+            </th>
+            <th>
+              Content
+            </th>
+            <th>
+              Bookmarked
+            </th>
+            <th>
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              The Alchemist
+            </td>
+            <td>
+              Paulo Cohelo
+            </td>
+            <td>
+              A philosophical book regarding life journey
+            </td>
+            <td>
+              fiction
+            </td>
+            <td>
+              Some book content
+            </td>
+            <td className=\\"bookmark-column\\">
+              <i className=\\"far fa-star\\" />
+            </td>
+            <td>
+              <button id=\\"edit-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"far fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </td>
+          </tr>
+          <tr>
+            <td>
+              The Digital Fortress
+            </td>
+            <td>
+              Dawn Brown
+            </td>
+            <td>
+              A techno-thriller novel 
+            </td>
+            <td>
+              fiction
+            </td>
+            <td>
+              Some book content
+            </td>
+            <td className=\\"bookmark-column\\">
+              <i className=\\"far fa-star\\" />
+            </td>
+            <td>
+              <button id=\\"edit-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"far fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Harry Potter
+            </td>
+            <td>
+              J K Rowling
+            </td>
+            <td>
+              A philosophical book regarding life journey
+            </td>
+            <td>
+              fiction
+            </td>
+            <td>
+              Some book content
+            </td>
+            <td className=\\"bookmark-column\\">
+              <i className=\\"fas fa-star\\" />
+            </td>
+            <td>
+              <button id=\\"edit-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"fas fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Kane n Abel
+            </td>
+            <td>
+              Jeffry Archer
+            </td>
+            <td>
+              A philosophical book regarding life journey
+            </td>
+            <td>
+              fiction
+            </td>
+            <td>
+              Some book content
+            </td>
+            <td className=\\"bookmark-column\\">
+              <i className=\\"far fa-star\\" />
+            </td>
+            <td>
+              <button id=\\"edit-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"far fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Start With Why
+            </td>
+            <td>
+              Simon Sinek
+            </td>
+            <td>
+              A philosophical book regarding life journey
+            </td>
+            <td>
+              non-fiction
+            </td>
+            <td>
+              Some book content
+            </td>
+            <td className=\\"bookmark-column\\">
+              <i className=\\"far fa-star\\" />
+            </td>
+            <td>
+              <button id=\\"edit-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+              </button>
+              <button id=\\"bookmark-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                <i className=\\"far fa-star\\" />
+              </button>
+              <button id=\\"delete-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+              </button>
+               
+            </td>
+          </tr>
+        </tbody>
+      </table>
+       
+    </div>
+  </div>
+</ErrorBoundary>"
+`;
+
+exports[`<ConnectedBookStoreListView /> +++ render the connected component 1`] = `
+"<Provider store={{...}}>
+  <Connect(BookStoreListView) books={{...}} deleteBook={[Function: mockConstructor]} bookmarkBook={[Function: mockConstructor]} updateBookProgress={[Function: mockConstructor]}>
+    <BookStoreListView books={{...}} deleteBook={[Function]} bookmarkBook={[Function]} updateBookProgress={[Function]}>
+      <ErrorBoundary>
+        <div className=\\"row\\">
+          <div className=\\"col-md-10 offset-md-1\\">
+            <table className=\\"table\\" id=\\"book-store-table\\">
+              <thead className=\\"thead-dark\\">
+                <tr>
+                  <th>
+                    Book Name
+                  </th>
+                  <th>
+                    Author
+                  </th>
+                  <th>
+                    Description
+                  </th>
+                  <th>
+                    Category
+                  </th>
+                  <th>
+                    Content
+                  </th>
+                  <th>
+                    Bookmarked
+                  </th>
+                  <th>
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Harry Potter
+                  </td>
+                  <td>
+                    J K Rowling
+                  </td>
+                  <td>
+                    A philosophical book regarding life journey
+                  </td>
+                  <td>
+                    fiction
+                  </td>
+                  <td>
+                    Some book content
+                  </td>
+                  <td className=\\"bookmark-column\\">
+                    <i className=\\"fas fa-star\\" />
+                  </td>
+                  <td>
+                    <button id=\\"edit-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"fas fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-3\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Kane n Abel
+                  </td>
+                  <td>
+                    Jeffry Archer
+                  </td>
+                  <td>
+                    A philosophical book regarding life journey
+                  </td>
+                  <td>
+                    fiction
+                  </td>
+                  <td>
+                    Some book content
+                  </td>
+                  <td className=\\"bookmark-column\\">
+                    <i className=\\"far fa-star\\" />
+                  </td>
+                  <td>
+                    <button id=\\"edit-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"far fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-4\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Start With Why
+                  </td>
+                  <td>
+                    Simon Sinek
+                  </td>
+                  <td>
+                    A philosophical book regarding life journey
+                  </td>
+                  <td>
+                    non-fiction
+                  </td>
+                  <td>
+                    Some book content
+                  </td>
+                  <td className=\\"bookmark-column\\">
+                    <i className=\\"far fa-star\\" />
+                  </td>
+                  <td>
+                    <button id=\\"edit-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"far fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-5\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    The Alchemist
+                  </td>
+                  <td>
+                    Paulo Cohelo
+                  </td>
+                  <td>
+                    A philosophical book regarding life journey
+                  </td>
+                  <td>
+                    fiction
+                  </td>
+                  <td>
+                    Some book content
+                  </td>
+                  <td className=\\"bookmark-column\\">
+                    <i className=\\"far fa-star\\" />
+                  </td>
+                  <td>
+                    <button id=\\"edit-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"far fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-1\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    The Digital Fortress
+                  </td>
+                  <td>
+                    Dawn Brown
+                  </td>
+                  <td>
+                    A techno-thriller novel 
+                  </td>
+                  <td>
+                    fiction
+                  </td>
+                  <td>
+                    Some book content
+                  </td>
+                  <td className=\\"bookmark-column\\">
+                    <i className=\\"far fa-star\\" />
+                  </td>
+                  <td>
+                    <button id=\\"edit-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-success btn-sm\\">
+                      <i className=\\"fa fa-edit\\" aria-hidden=\\"true\\" />
+                    </button>
+                    <button id=\\"bookmark-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-warning btn-sm\\">
+                      <i className=\\"far fa-star\\" />
+                    </button>
+                    <button id=\\"delete-btn-gridview-2\\" onClick={[Function: onClick]} className=\\"btn btn-danger btn-sm\\">
+                      <i className=\\"fa fa-trash\\" aria-hidden=\\"true\\" />
+                    </button>
+                     
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+             
+          </div>
+        </div>
+      </ErrorBoundary>
+    </BookStoreListView>
+  </Connect(BookStoreListView)>
+</Provider>"
+`;

@@ -8,7 +8,7 @@ import {
   updateBookProgress,
   bookmarkBook
 } from "actions/actionCreators.js";
-class BookStoreListView extends Component {
+export class BookStoreListView extends Component {
   constructor(props) {
     super(props);
   }
@@ -64,12 +64,14 @@ class BookStoreListView extends Component {
                       </td>
                       <td>
                         <button
+                          id={`edit-btn-gridview-${book.id}`}
                           onClick={() => this.editBook(book.id)}
                           className="btn btn-success btn-sm"
                         >
                           <i className="fa fa-edit" aria-hidden="true" />
                         </button>
                         <button
+                          id={`bookmark-btn-gridview-${book.id}`}
                           onClick={() => this.starBook(book.id)}
                           className="btn btn-warning btn-sm"
                         >
@@ -77,6 +79,7 @@ class BookStoreListView extends Component {
                           {!book.isBookmarked && <i className="far fa-star" />}
                         </button>
                         <button
+                          id={`delete-btn-gridview-${book.id}`}
                           onClick={() => this.removeBook(book.id)}
                           className="btn btn-danger btn-sm"
                         >
