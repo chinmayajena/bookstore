@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1550815715924" clover="3.2.0">
-  <project timestamp="1550815715925" name="All files">
-    <metrics statements="149" coveredstatements="113" conditionals="74" coveredconditionals="40" methods="64" coveredmethods="43" elements="287" coveredelements="196" complexity="0" loc="149" ncloc="149" packages="6" files="16" classes="16"/>
+<coverage generated="1550817987915" clover="3.2.0">
+  <project timestamp="1550817987915" name="All files">
+    <metrics statements="149" coveredstatements="138" conditionals="74" coveredconditionals="50" methods="64" coveredmethods="61" elements="287" coveredelements="249" complexity="0" loc="149" ncloc="149" packages="6" files="16" classes="16"/>
     <package name="src">
       <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="/Users/chinmayajena/work/react/bookstore/src/index.js">
@@ -18,29 +18,29 @@
       <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
       <file name="actionCreators.js" path="/Users/chinmayajena/work/react/bookstore/src/actions/actionCreators.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
-        <line num="12" count="6" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="32" count="6" type="stmt"/>
-        <line num="37" count="6" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
-        <line num="56" count="6" type="stmt"/>
-        <line num="61" count="6" type="stmt"/>
-        <line num="66" count="6" type="stmt"/>
-        <line num="71" count="6" type="stmt"/>
-        <line num="76" count="6" type="stmt"/>
+        <line num="56" count="7" type="stmt"/>
+        <line num="61" count="7" type="stmt"/>
+        <line num="66" count="7" type="stmt"/>
+        <line num="71" count="7" type="stmt"/>
+        <line num="76" count="7" type="stmt"/>
       </file>
       <file name="actionTypes.js" path="/Users/chinmayajena/work/react/bookstore/src/actions/actionTypes.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="8" type="stmt"/>
-        <line num="2" count="8" type="stmt"/>
-        <line num="3" count="8" type="stmt"/>
-        <line num="4" count="8" type="stmt"/>
-        <line num="5" count="8" type="stmt"/>
-        <line num="6" count="8" type="stmt"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="9" count="8" type="stmt"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="9" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
       </file>
     </package>
     <package name="src.components">
@@ -53,8 +53,8 @@
       <file name="CreateBookForm.js" path="/Users/chinmayajena/work/react/bookstore/src/components/CreateBookForm.js">
         <metrics statements="15" coveredstatements="15" conditionals="9" coveredconditionals="3" methods="3" coveredmethods="3"/>
         <line num="4" count="4" type="stmt"/>
-        <line num="5" count="5" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
         <line num="99" count="4" type="stmt"/>
         <line num="100" count="1" type="stmt"/>
         <line num="101" count="1" type="cond" truecount="1" falsecount="1"/>
@@ -65,21 +65,21 @@
         <line num="107" count="1" type="stmt"/>
         <line num="109" count="1" type="stmt"/>
         <line num="112" count="4" type="stmt"/>
-        <line num="118" count="4" type="stmt"/>
+        <line num="118" count="7" type="stmt"/>
         <line num="134" count="4" type="stmt"/>
       </file>
       <file name="ErrorBoundary.js" path="/Users/chinmayajena/work/react/bookstore/src/components/ErrorBoundary.js">
         <metrics statements="6" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="3" coveredmethods="2"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="17" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="6" type="cond" truecount="1" falsecount="1"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="29" count="4" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
       </file>
     </package>
     <package name="src.containers">
-      <metrics statements="60" coveredstatements="32" conditionals="23" coveredconditionals="9" methods="37" coveredmethods="17"/>
+      <metrics statements="60" coveredstatements="57" conditionals="23" coveredconditionals="19" methods="37" coveredmethods="35"/>
       <file name="AddBook.js" path="/Users/chinmayajena/work/react/bookstore/src/containers/AddBook.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="11" count="1" type="stmt"/>
@@ -101,59 +101,59 @@
         <line num="49" count="1" type="stmt"/>
       </file>
       <file name="BookStoreGridView.js" path="/Users/chinmayajena/work/react/bookstore/src/containers/BookStoreGridView.js">
-        <metrics statements="19" coveredstatements="13" conditionals="8" coveredconditionals="7" methods="11" coveredmethods="7"/>
-        <line num="15" count="4" type="stmt"/>
+        <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="7" methods="11" coveredmethods="11"/>
+        <line num="15" count="5" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
-        <line num="35" count="4" type="stmt"/>
-        <line num="37" count="4" type="stmt"/>
-        <line num="38" count="20" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="38" count="25" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
         <line num="66" count="1" type="stmt"/>
         <line num="74" count="1" type="stmt"/>
-        <line num="85" count="4" type="stmt"/>
+        <line num="85" count="5" type="stmt"/>
         <line num="106" count="2" type="stmt"/>
-        <line num="107" count="0" type="stmt"/>
+        <line num="107" count="1" type="stmt"/>
         <line num="117" count="2" type="stmt"/>
-        <line num="118" count="0" type="stmt"/>
+        <line num="118" count="1" type="stmt"/>
       </file>
       <file name="BookStoreListView.js" path="/Users/chinmayajena/work/react/bookstore/src/containers/BookStoreListView.js">
-        <metrics statements="17" coveredstatements="2" conditionals="10" coveredconditionals="0" methods="11" coveredmethods="0"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="67" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="80" count="0" type="stmt"/>
-        <line num="107" count="1" type="stmt"/>
-        <line num="108" count="0" type="stmt"/>
-        <line num="118" count="1" type="stmt"/>
-        <line num="119" count="0" type="stmt"/>
+        <metrics statements="17" coveredstatements="17" conditionals="10" coveredconditionals="9" methods="11" coveredmethods="11"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="52" count="25" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="110" count="2" type="stmt"/>
+        <line num="111" count="1" type="stmt"/>
+        <line num="121" count="2" type="stmt"/>
+        <line num="122" count="1" type="stmt"/>
       </file>
       <file name="EditBook.js" path="/Users/chinmayajena/work/react/bookstore/src/containers/EditBook.js">
-        <metrics statements="10" coveredstatements="3" conditionals="3" coveredconditionals="0" methods="6" coveredmethods="1"/>
+        <metrics statements="10" coveredstatements="7" conditionals="3" coveredconditionals="1" methods="6" coveredmethods="4"/>
         <line num="11" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
         <line num="37" count="2" type="cond" truecount="0" falsecount="1"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="43" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="43" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.reducers">
@@ -195,26 +195,26 @@
       <metrics statements="20" coveredstatements="19" conditionals="18" coveredconditionals="13" methods="6" coveredmethods="6"/>
       <file name="ArraySearchUtil.js" path="/Users/chinmayajena/work/react/bookstore/src/utils/ArraySearchUtil.js">
         <metrics statements="20" coveredstatements="19" conditionals="18" coveredconditionals="13" methods="6" coveredmethods="6"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
         <line num="6" count="28" type="stmt"/>
-        <line num="16" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="8" type="cond" truecount="3" falsecount="1"/>
+        <line num="16" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="26" type="cond" truecount="3" falsecount="1"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="21" count="8" type="cond" truecount="1" falsecount="1"/>
-        <line num="22" count="8" type="cond" truecount="1" falsecount="1"/>
-        <line num="24" count="8" type="stmt"/>
-        <line num="25" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="26" count="3" type="stmt"/>
-        <line num="27" count="5" type="cond" truecount="1" falsecount="1"/>
-        <line num="28" count="5" type="stmt"/>
-        <line num="30" count="8" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
+        <line num="21" count="26" type="cond" truecount="1" falsecount="1"/>
+        <line num="22" count="26" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="26" type="stmt"/>
+        <line num="25" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="15" type="stmt"/>
+        <line num="27" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="11" type="stmt"/>
+        <line num="30" count="26" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
       </file>
     </package>
   </project>
