@@ -4,10 +4,9 @@ import { bindActionCreators } from "redux";
 import { search, sortBy, sortOrder } from "actions/actionCreators.js";
 import ErrorBoundary from "components/ErrorBoundary.js";
 
-class BookStoreFilter extends Component {
+export class BookStoreFilter extends Component {
   render() {
     const { bookStoreSettings, search, value, sortBy, sortOrder } = this.props;
-
     return (
       <ErrorBoundary>
         <select
@@ -26,7 +25,7 @@ class BookStoreFilter extends Component {
           className="btn btn-sm btn-info"
           onClick={e => sortOrder("change")}
         >
-          {bookStoreSettings.sortOrder}
+          {bookStoreSettings && bookStoreSettings.sortOrder}
         </button>
         <input
           id="search-input"

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookStoreFilter /> renders the component 1`] = `
+"<ErrorBoundary>
+  <select id=\\"sort-select\\" className=\\"form-control\\" onChange={[Function: onChange]}>
+    <option value=\\"name\\">
+      Select Sort By...
+    </option>
+    <option value=\\"name\\">
+      Book Name
+    </option>
+    <option value=\\"author\\">
+      Author
+    </option>
+    <option value=\\"isBookmarked\\">
+      Star
+    </option>
+  </select>
+  <button id=\\"sort-order-btn\\" type=\\"button\\" className=\\"btn btn-sm btn-info\\" onClick={[Function: onClick]}>
+    asc
+  </button>
+  <input id=\\"search-input\\" className=\\"form-control\\" placeholder=\\"Search ...\\" onChange={[Function: onChange]} value=\\"\\" />
+</ErrorBoundary>"
+`;
+
+exports[`<ConnectedBookStoreFilter /> +++ render the connected component 1`] = `ReactWrapper {}`;
