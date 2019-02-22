@@ -5,3 +5,5 @@ exports[`<AddBook /> renders the component 1`] = `
   <ReduxForm onSubmit={[Function]} touchOnBlur={true} touchOnChange={false} persistentSubmitErrors={false} destroyOnUnmount={true} shouldAsyncValidate={[Function: defaultShouldAsyncValidate]} shouldValidate={[Function: defaultShouldValidate]} shouldError={[Function: defaultShouldError]} shouldWarn={[Function: defaultShouldWarn]} enableReinitialize={true} keepDirtyOnReinitialize={true} updateUnregisteredFields={true} getFormState={[Function: getFormState]} pure={true} forceUnregisterOnUnmount={false} form=\\"createBook\\" />
 </ErrorBoundary>"
 `;
+
+exports[`<ConnectedAddBook /> +++ render the connected component 1`] = `ReactWrapper {}`;

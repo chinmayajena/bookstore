@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1550774250440" clover="3.2.0">
-  <project timestamp="1550774250441" name="All files">
-    <metrics statements="149" coveredstatements="91" conditionals="72" coveredconditionals="31" methods="64" coveredmethods="28" elements="285" coveredelements="150" complexity="0" loc="149" ncloc="149" packages="6" files="16" classes="16"/>
+<coverage generated="1550806818264" clover="3.2.0">
+  <project timestamp="1550806818265" name="All files">
+    <metrics statements="149" coveredstatements="95" conditionals="72" coveredconditionals="31" methods="64" coveredmethods="30" elements="285" coveredelements="156" complexity="0" loc="149" ncloc="149" packages="6" files="16" classes="16"/>
     <package name="src">
       <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="/Users/chinmayajena/work/react/bookstore/src/index.js">
@@ -53,8 +53,8 @@
       <file name="CreateBookForm.js" path="/Users/chinmayajena/work/react/bookstore/src/components/CreateBookForm.js">
         <metrics statements="15" coveredstatements="15" conditionals="9" coveredconditionals="3" methods="3" coveredmethods="3"/>
         <line num="4" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
         <line num="99" count="4" type="stmt"/>
         <line num="100" count="1" type="stmt"/>
         <line num="101" count="1" type="cond" truecount="1" falsecount="1"/>
@@ -65,29 +65,29 @@
         <line num="107" count="1" type="stmt"/>
         <line num="109" count="1" type="stmt"/>
         <line num="112" count="4" type="stmt"/>
-        <line num="118" count="1" type="stmt"/>
+        <line num="118" count="4" type="stmt"/>
         <line num="134" count="4" type="stmt"/>
       </file>
       <file name="ErrorBoundary.js" path="/Users/chinmayajena/work/react/bookstore/src/components/ErrorBoundary.js">
         <metrics statements="6" coveredstatements="4" conditionals="4" coveredconditionals="1" methods="3" coveredmethods="2"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.containers">
-      <metrics statements="60" coveredstatements="10" conditionals="21" coveredconditionals="0" methods="37" coveredmethods="2"/>
+      <metrics statements="60" coveredstatements="14" conditionals="21" coveredconditionals="0" methods="37" coveredmethods="4"/>
       <file name="AddBook.js" path="/Users/chinmayajena/work/react/bookstore/src/containers/AddBook.js">
-        <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
       </file>
       <file name="BookStoreFilter.js" path="/Users/chinmayajena/work/react/bookstore/src/containers/BookStoreFilter.js">
         <metrics statements="8" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
